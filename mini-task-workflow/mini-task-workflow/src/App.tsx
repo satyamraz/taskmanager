@@ -5,7 +5,7 @@ import TaskList from "./component/TaskList";
 const App = () => {
   
   return (
-    <Router>
+    <Router basename="/taskmanager">
       <Routes>
         <Route path="/" element={<TaskForm  />} />
          <Route path="/task/:id" element={<TaskForm />} />
